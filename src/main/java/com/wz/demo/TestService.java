@@ -11,7 +11,17 @@ import java.util.TreeSet;
 
 public class TestService {
     public static void main(String[] args) {
-
+        Thread thread = new Thread(()->{
+            System.out.println("I'm daemon thread-----");
+        });
+        thread.setDaemon(true);
+        thread.start();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("main thread");
     }
 
     private static void testSet() {

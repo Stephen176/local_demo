@@ -1,0 +1,19 @@
+<configuration>
+    <property name="LOG_PATH" value="D:\IdeaProjects\logs"/>
+
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %red(%d{yyyy-MM-dd HH:mm:ss}) [%X{traceId}/%X{spanId}] %green([%thread]) %highlight(%-5level)
+                %boldMagenta(%logger{10}) - %cyan(%msg%n)
+            </pattern>
+        </layout>
+    </appender>
+
+    <!--myibatis log configure-->
+    <logger name="com.wz" level="DEBUG"/>
+
+    <root level="INFO">
+        <appender-ref ref="consoleLog"/>
+    </root>
+</configuration>
