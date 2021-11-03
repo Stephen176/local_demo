@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author Your Name
  */
-public class Test1 {
+public class MaxLengthSymmetryStr {
     public static void main(String[] args) {
         // TODO 输出最长对称字符串：goog
         String input1 = "google";
