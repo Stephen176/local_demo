@@ -1,6 +1,6 @@
 package com.wz.thread;
 
-import com.wz.thread.model.User;
+import com.wz.model.User;
 
 /**
  * author: jiangtaihe

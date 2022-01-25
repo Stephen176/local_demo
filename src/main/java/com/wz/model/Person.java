@@ -1,4 +1,4 @@
-package com.wz.thread.model;
+package com.wz.model;
 
 /**
  * author: jiangtaihe
